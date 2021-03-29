@@ -20,11 +20,34 @@ class Main extends Component {
                 title: "Developer",
             }
         ]
-    }
+    };
+
+    handleClick = () => {
+        this.setState({
+            persons: [
+                {
+                    name: "Test",
+                    age: 25,
+                    title: "CEO",
+                },
+                {
+                    name: "My",
+                    age: 31,
+                    title: "Designer",
+                },
+                {
+                    name: "Name",
+                    age: 41,
+                    title: "Developer",
+                }
+            ]
+        });
+    };
 
     render() {
         return (
             <main>
+                <button onClick={this.handleClick}>Click Me on the main page</button>
                 <div>
                     <Box
                         name={this.state.persons[0].name}
@@ -46,19 +69,5 @@ class Main extends Component {
         )
     }
 }
-
-/* class Main extends Component {
-    render() {
-        return (
-            <main>
-                <div>
-                    <Box name="Khan" age="31" title="CEO" />
-                    <Box name="Matt" age="35" title="FullStack Developer" />
-                    <Box name="Smith" age="25" title="Manager" />
-                </div>
-            </main>
-        )
-    }
-} */
 
 export default Main;
