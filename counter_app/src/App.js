@@ -40,7 +40,8 @@ class App extends Component {
 
   render() {
 
-    let circleClass = `${this.state.counter === 0
+    let circleClass = `${
+      this.state.counter === 0
         ? ""
         : this.state.counter % 2 === 0
           ? "even"
