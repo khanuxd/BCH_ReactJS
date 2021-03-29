@@ -11,3 +11,11 @@
 button {
   background-color: #ccc;
 }
+
+.odd {
+  background-color: lightblue;
+}
+
+.even {
+  background-color: skyblue;
+}

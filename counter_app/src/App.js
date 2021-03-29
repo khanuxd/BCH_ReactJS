@@ -15,9 +15,20 @@ class App extends Component {
 
   removeHandler = () => {
     console.log('clicked removeHand');
-    this.setState({
-      counter: this.state.counter - 1,
-    });
+    if (this.state.counter !== 0) {
+      this.setState({
+        counter: this.state.counter - 1,
+      });
+    }
+    /* if (this.state.counter > 0){
+      this.setState({
+        counter: this.state.counter - 1,
+      });
+    } else {
+      this.setState({
+        counter: 0,
+      });
+    } */
   };
 
   resetHandler = () => {
@@ -28,9 +39,17 @@ class App extends Component {
   };
 
   render() {
+
+    let circleClass = `${this.state.counter === 0
+        ? ""
+        : this.state.counter % 2 === 0
+          ? "even"
+          : "odd"
+      } circle`;
+
     return (
       <div>
-        <h1 className="circle">{this.state.counter}</h1>
+        <h1 className={circleClass}>{this.state.counter}</h1>
         <button onClick={this.addHandler}>Add 1</button>
         <button onClick={this.removeHandler}>Remove 1</button>
         <button onClick={this.resetHandler}>Reset</button>
