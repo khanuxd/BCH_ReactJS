@@ -3,19 +3,28 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    counter: 20,
+    counter: 0,
   };
 
   addHandler = () => {
     console.log('clicked addHand');
+    this.setState({
+      counter: this.state.counter + 1,
+    });
   };
 
   removeHandler = () => {
     console.log('clicked removeHand');
+    this.setState({
+      counter: this.state.counter - 1,
+    });
   };
 
   resetHandler = () => {
     console.log('clicked resetHand');
+    this.setState({
+      counter: 0,
+    });
   };
 
   render() {
