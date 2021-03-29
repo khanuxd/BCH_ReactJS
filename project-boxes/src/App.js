@@ -1,10 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
+
+<Main name="Khan Fayjul" age="31 Years" title="UX Designer" />
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
