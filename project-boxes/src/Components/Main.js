@@ -5,16 +5,25 @@ class Main extends Component {
     state = {
         persons: [
             {
+                id: 1,
                 name: "Khan",
                 age: 25,
                 title: "CEO",
             },
             {
+                id: 2,
                 name: "Smith",
                 age: 31,
                 title: "Designer",
             },
             {
+                id: 3,
+                name: "Ronn",
+                age: 41,
+                title: "Developer",
+            },
+            {
+                id: 4,
                 name: "Ronn",
                 age: 41,
                 title: "Developer",
@@ -49,7 +58,10 @@ class Main extends Component {
             <main>
                 <button onClick={this.handleClick}>Click Me on the main page</button>
                 <div>
-                    <Box
+                    {this.state.persons.map(i => {
+                        return <Box name={i.name} age={i.age} title={i.title} key={i.id} /> })
+                        }
+                    {/* <Box
                         name={this.state.persons[0].name}
                         age={this.state.persons[0].age}
                         title={this.state.persons[0].title}
@@ -63,7 +75,7 @@ class Main extends Component {
                         name={this.state.persons[2].name}
                         age={this.state.persons[2].age}
                         title={this.state.persons[2].title}
-                    />
+                    /> */}
                 </div>
             </main>
         )
