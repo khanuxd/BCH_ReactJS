@@ -1,17 +1,20 @@
 import './App.css';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
-
-<Main name="Khan Fayjul" age="31 Years" title="UX Designer" />
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Main_router from './Components/Main_router';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Main_router />
+        <Main />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
