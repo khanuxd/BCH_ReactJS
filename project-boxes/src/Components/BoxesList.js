@@ -33,7 +33,7 @@ class BoxesList extends Component {
 
     render() {
         return (
-            <main>
+            <main className="cards">
                 <BoxCard
                     name={this.state.persons[0].name}
                     age={this.state.persons[0].age}
