@@ -1,3 +1,40 @@
+.app {
+  text-align: center;
+  padding: 3rem;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.nav-el {
+  background-color: #fff;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.nav-el ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-el ul li {
+  margin: 1rem;
+}
+
+.nav-el ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
 #mainArea {
   display: flex;
   justify-content: space-around;
@@ -5,7 +42,6 @@
 
 .box {
   display: inline-block;
-  /* width: 200px; */
   background-color: white;
   margin: 1rem;
   padding: 1rem;
@@ -17,7 +53,18 @@
   text-align: center;
 }
 
-#footer {
+.box button {
+  width: 150px;
+  border-style: none;
+  background-color: rgb(57, 57, 57);
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+}
+
+.footer {
   background-color: white;
   text-align: center;
+  background-color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
 }

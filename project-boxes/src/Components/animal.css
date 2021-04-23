@@ -1,0 +1,31 @@
+.animalCard {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  padding: 1rem;
+  max-width: 250px;
+  text-align: center;
+}
+
+.animalCard button {
+  width: 150px;
+  border-style: none;
+  background-color: rgb(57, 57, 57);
+  padding: .7rem 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.animalCard img {
+  width: 100%;
+}
+
+.animallist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
