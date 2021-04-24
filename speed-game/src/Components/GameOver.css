@@ -1,0 +1,38 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: black;
+}
+
+.gameOverBox {
+  background-color: white;
+  padding: 1rem;
+  width: 350px;
+  height: 200px;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+main .gameOverBox button {
+    background: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid black;
+}

@@ -1,0 +1,38 @@
+.circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  cursor: pointer;
+  border: 3px solid #fff;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.active {
+  background-image: url(../assets/img/ball.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700;800&display=swap');
+
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    to right top,
+    #4d0155,
+    #8e0055,
+    #c12948,
+    #e16031,
+    #eb9a12
+  );
+  background-attachment: fixed;
+  font-family: 'Lexend', sans-serif;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  /* width: 150px; */
+  padding: 1rem;
+  margin: 1rem;
+  background: #fff;
+  box-shadow: 0 0 5px #747474;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}

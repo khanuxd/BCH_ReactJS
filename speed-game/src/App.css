@@ -1,0 +1,22 @@
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+main {
+  width: 700px;
+  height: 500px;
+  padding-top: 150px;
+  color: #fff;
+}
+
+main h1 {
+  font-size: 3.5rem;
+}
+
+main h3 {
+  font-size: 2rem;
+}
