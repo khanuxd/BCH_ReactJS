@@ -1,48 +1,53 @@
 import React, { Component } from "react";
+
 import AnimalCard from "./AnimalCard";
+import SearchBox from "../searchBox/SearchBox";
 
 import "./animal.css";
+
+import { myAnimalsList as animals } from "./animals";
 
 class AnimalsList extends Component {
 
     state = {
-        animals: [
-            {
-                id: 1,
-                name: "Fox",
-                img: "https://source.unsplash.com/AjZjBEjQ5Cw/"
-            },
-            {
-                id: 2,
-                name: "Rabbit",
-                img: "https://source.unsplash.com/hS41iEO300E/"
-            },
-            {
-                id: 3,
-                name: "Wolf",
-                img: "https://source.unsplash.com/WFPWB7Vum1E/"
-            },
-        ],
+        animals: animals,
+        searchInput: "",
     };
 
     clickHandler = (name) => {
-        alert("Hello, My name is " + name );
+        alert("Hello, My name is " + name);
     };
 
+    searchValueHandler = (event) => {
+        // console.log("input was used");
+        this.setState({
+            searchInput: event.target.value,
+        });
+        console.log(this.state.searchInput);
+    }
+
     render() {
-        const animalslist = this.state.animals.map((animal) => {
+
+        const animalFilter = this.state.animals.filter(animal => {
+            return animal.name.toLowerCase().includes(this.state.searchInput.toLowerCase());
+        });
+
+        const animalslist = animalFilter.map((animal) => {
             return (
-            <AnimalCard
-            name={animal.name}
-                img={animal.img}
-                key={animal.id}
-                clickme={() => this.clickHandler(animal.name)} />
-                );
-                // clickme={this.clickHandler.bind(this, animal.name)} />)
+                <AnimalCard
+                    name={animal.name}
+                    img={animal.img}
+                    key={animal.name}
+                    clickme={() => this.clickHandler(animal.name)} />
+            );
         });
         return (
-            <div className="animallist">
-                {animalslist}
+            <div>
+                <SearchBox search={this.searchValueHandler} />
+                {/* <p>{this.state.searchInput}</p> */}
+                <div className="animallist">
+                    {animalslist}
+                </div>
             </div>
         );
     }

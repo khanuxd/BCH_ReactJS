@@ -7,8 +7,13 @@
   -o-border-radius: 5px;
   box-shadow: 0 0 5px #333;
   padding: 1rem;
-  max-width: 250px;
-  text-align: center;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
 }
 
 .animalCard button {
@@ -26,5 +31,8 @@
 
 .animallist {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* justify-content: space-evenly; */
 }
