@@ -1,0 +1,28 @@
+{
+    "notes": [
+        {
+            "id": 1,
+            "firstName": "Fayjul",
+            "lastName": "Khan",
+            "phone": "1234567890",
+            "role": "student",
+            "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "id": 2,
+            "firstName": "Farzu",
+            "lastName": "Tajuddin",
+            "phone": "1234567890",
+            "role": "student",
+            "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "id": 3,
+            "firstName": "Md",
+            "lastName": "Khan",
+            "phone": "1234567890",
+            "role": "student",
+            "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        }
+    ]
+}

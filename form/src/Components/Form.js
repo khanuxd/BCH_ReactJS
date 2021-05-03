@@ -1,7 +1,7 @@
 import React from 'react';
 import './form.css';
 
-function Form({ submit, change }) {
+const Form = ({ submit, change }) => {
 
     return (
         <div className="form">
@@ -20,7 +20,7 @@ function Form({ submit, change }) {
                 </div>
                 <div>
                     <label htmlFor="role">Role</label>
-                    <select name="role" value={role} onChange={change}>
+                    <select name="role" onChange={change}>
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
                         <option value="other">Other</option>

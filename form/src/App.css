@@ -1,0 +1,4 @@
+.app {
+    display: flex;
+    flex-basis: 50% 50%;
+}
