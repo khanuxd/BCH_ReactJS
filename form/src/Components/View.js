@@ -1,15 +1,15 @@
 import React from 'react';
 import './view.css'
 
-const View = (props) => {
+const View = ({ firstName, lastName, phone, role, message }) => {
     return (
         <div className="view">
             <h1>This is your input</h1>
-            <p>First Name : <span>{props.firstName}</span></p>
-            <p>Last Name : <span>{props.lastName}</span></p>
-            <p>Phone : <span>{props.phone}</span></p>
-            <p>Role : <span>{props.role}</span></p>
-            <p>Message : <span>{props.message}</span></p>
+            <p>First Name : <span>{firstName}</span></p>
+            <p>Last Name : <span>{lastName}</span></p>
+            <p>Phone : <span>{phone}</span></p>
+            <p>Role : <span>{role}</span></p>
+            <p>Message : <span>{message}</span></p>
         </div>
     );
 };

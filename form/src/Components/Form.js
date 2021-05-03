@@ -1,26 +1,26 @@
 import React from 'react';
 import './form.css';
 
-function Form(props) {
+function Form({ submit, change }) {
 
     return (
         <div className="form">
-            <form onSubmit={props.submit}>
+            <form onSubmit={submit}>
                 <div>
                     <label htmlFor="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName" onChange={props.change} required></input>
+                    <input type="text" name="firstName" id="firstName" onChange={change} required></input>
                 </div>
                 <div>
                     <label htmlFor="lastName">Last Name</label>
-                    <input type="text" name="lastName" onChange={props.change} required></input>
+                    <input type="text" name="lastName" onChange={change} required></input>
                 </div>
                 <div>
                     <label htmlFor="phone">Phone Number</label>
-                    <input type="text" name="phone" onChange={props.change}></input>
+                    <input type="text" name="phone" onChange={change}></input>
                 </div>
                 <div>
                     <label htmlFor="role">Role</label>
-                    <select name="role" value={props.role} onChange={props.change}>
+                    <select name="role" value={role} onChange={change}>
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
                         <option value="other">Other</option>
@@ -28,7 +28,7 @@ function Form(props) {
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" rows="4" cols="50" onChange={props.change} />
+                    <textarea name="message" rows="4" cols="50" onChange={change} />
                 </div>
                 <input type="submit" value="send" />
             </form>
