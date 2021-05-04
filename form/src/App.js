@@ -5,19 +5,18 @@ import View from './Components/View';
 import Popup from './Components/Popup';
 import NotesList from './Components/NotesList';
 
-import './App.css';
-
 
 class App extends Component {
   state = {
+    notes: [],
     firstName: "",
     lastName: "",
     phone: "",
     role: "",
     message: "",
     showPopup: false,
-    notes: [],
   }
+
 
   componentDidMount() {
     fetch("http://localhost:3001/notes")
@@ -48,7 +47,7 @@ class App extends Component {
     };
 
     return (
-      <div className="app">
+      <div>
         <Form change={this.changeHandler} submit={this.popupHandler} />
         <View {...props} />
         <NotesList notes={this.state.notes} />
