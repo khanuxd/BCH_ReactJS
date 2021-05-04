@@ -1,8 +1,9 @@
 import React from 'react';
+import './notesList.css';
 
 const NotesList = ({ notes }) => {
     return (
-        <div>
+        <div className="notes">
             <h1>My Notes</h1>
             <ul>
                 {notes.map((note) => {
