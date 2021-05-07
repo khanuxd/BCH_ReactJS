@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 
-import Home from './Home';
-import Recipes from './Recipes';
-import About from './About';
+import Home from './Pages/Home';
+import Recipes from './Pages/Recipes';
+import About from './Pages/About';
+import NewRecipe from './Pages/NewRecipe';
 
 class Main extends Component {
 
@@ -13,6 +14,7 @@ class Main extends Component {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/recipes" component={Recipes} />
+                    <Route path="/add-new-recipe" component={NewRecipe} />
                     <Route path="/about" component={About} />
                 </Switch>
             </div>
