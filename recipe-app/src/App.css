@@ -74,7 +74,6 @@ button {
   background-color: #ff6f00;
   color: #fff;
   cursor: pointer;
-  
 }
 
 button:hover {
@@ -100,15 +99,12 @@ button:hover {
   border-radius: 5px;
 }
 
-/* .searchRecipes button {
-  padding: 0.8rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.2rem;
-  margin-left: 10px;
-  background-color: #ff6f00;
-  color: #fff;
-} */
+.search-area {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #c7c7c7;
+}
 
 .cards {
   display: flex;
@@ -120,6 +116,7 @@ button:hover {
 .card {
   background: #fff;
   width: 22rem;
+  height: 33rem;
   border-radius: 0.6em;
   margin: 2rem;
   overflow: hidden;

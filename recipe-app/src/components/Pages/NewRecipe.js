@@ -1,21 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from "axios";
 
-const NewRecipe = ({ change, submit }) => {
+const NewRecipe = () => {
+
+    const [recipeNew, setRecipeNew] = useState({
+        name: "",
+        category: "",
+        src: "",
+        about: "",
+        url: "",
+    });
+
+    const valueChangeHandler = (e) => {
+        setRecipeNew({ ...recipeNew, [e.target.name]: e.target.value })
+    };
+
+    const addRecipe = (e) => {
+        e.preventDefault();
+        axios
+            .post("http://localhost:3001/recipes", recipeNew);
+        e.target.reset();
+    }
+
     return (
-        <div>
+        <div className="add-recipe">
             <h1>Add Your Amazing Recipe</h1>
-            <form onSubmit={submit}>
+            <form onSubmit={addRecipe}>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input id="name" name="name" type="text" onChange={change} />
+                    <input id="name" name="name" type="text" onChange={valueChangeHandler} />
                 </div>
                 <div>
                     <label htmlFor="duration">Duration (in min)</label>
-                    <input id="duration" type="text" name="duration" onChange={change} />
+                    <input id="duration" type="number" name="duration" onChange={valueChangeHandler} />
                 </div>
                 <div>
                     <label htmlFor="category">Category</label>
-                    <select id="category" name="category" onChange={change}>
+                    <select id="category" name="category" onChange={valueChangeHandler}>
                         <option>Select</option>
                         <option value="indian">Indian</option>
                         <option value="mexican">Mexican</option>
@@ -26,13 +47,13 @@ const NewRecipe = ({ change, submit }) => {
                 </div>
                 <div>
                     <label htmlFor="about">Description</label>
-                    <textarea type="text" id="about" name="about" onChange={change} />
+                    <textarea type="text" id="about" name="about" onChange={valueChangeHandler} />
                 </div>
                 <div>
                     <label htmlFor="src">Image url</label>
-                    <input id="src" name="src" type="text" onChange={change} />
+                    <input id="src" name="src" type="text" onChange={valueChangeHandler} />
                 </div>
-                <button type="submit">Add Recipe</button>
+                <button type="submit" onSubmit={addRecipe}>Add Recipe</button>
             </form>
         </div>
     );

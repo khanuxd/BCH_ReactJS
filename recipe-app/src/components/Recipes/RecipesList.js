@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
 import SearchRecipes from '../SearchRecipes';
 
-// import axios from 'axios';
-
 class RecipesList extends Component {
     state = {
         recipes: [],
@@ -17,16 +15,6 @@ class RecipesList extends Component {
         fetch("http://localhost:3001/recipes")
             .then(res => res.json())
             .then(res => this.setState({ recipes: res, isLoading: false }));
-
-        /* axios
-            .get("http://localhost:3001/recipes")
-            .then((res) => {
-                this.setState({ recipes: res, isLoading: false });
-                console.log(res);
-            })
-            .catch(error => {
-                console.log('error getting fake data:' + error);
-            }) */
     }
 
     searchHandler = (e) => {
@@ -56,7 +44,9 @@ class RecipesList extends Component {
 
         return (
             <div>
-                <SearchRecipes searchInput={this.searchHandler} />
+                <div className="search-area">
+                    <SearchRecipes searchInput={this.searchHandler} />
+                </div>
                 <div className="cards">
                     {recipeList}
                 </div>
