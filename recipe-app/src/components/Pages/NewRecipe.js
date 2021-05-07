@@ -25,16 +25,16 @@ const NewRecipe = () => {
     return (
         <div className="add-recipe">
             <h1>Add Your Amazing Recipe</h1>
-            <form onSubmit={addRecipe}>
-                <div>
+            <form className="add-recipe-form" onSubmit={addRecipe}>
+                <div className="form-section">
                     <label htmlFor="name">Name</label>
-                    <input id="name" name="name" type="text" onChange={valueChangeHandler} />
+                    <input id="name" name="name" type="text" placeholder="Recipe Name" onChange={valueChangeHandler} />
                 </div>
-                <div>
+                <div className="form-section">
                     <label htmlFor="duration">Duration (in min)</label>
-                    <input id="duration" type="number" name="duration" onChange={valueChangeHandler} />
+                    <input id="duration" type="number" name="duration" placeholder="Ex: 30"  onChange={valueChangeHandler} />
                 </div>
-                <div>
+                <div className="form-section">
                     <label htmlFor="category">Category</label>
                     <select id="category" name="category" onChange={valueChangeHandler}>
                         <option>Select</option>
@@ -45,13 +45,13 @@ const NewRecipe = () => {
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <div>
+                <div className="form-section">
                     <label htmlFor="about">Description</label>
-                    <textarea type="text" id="about" name="about" onChange={valueChangeHandler} />
+                    <textarea type="text" id="about" name="about"  placeholder="Description" onChange={valueChangeHandler} />
                 </div>
-                <div>
+                <div className="form-section">
                     <label htmlFor="src">Image url</label>
-                    <input id="src" name="src" type="text" onChange={valueChangeHandler} />
+                    <input id="src" name="src" type="text" placeholder="Link url"  onChange={valueChangeHandler} />
                 </div>
                 <button type="submit" onSubmit={addRecipe}>Add Recipe</button>
             </form>
