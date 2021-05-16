@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
 import SearchRecipes from '../SearchRecipes';
+// import {useRouteMatch} from 'react-router-dom';
 
 class RecipesList extends Component {
     state = {
@@ -11,10 +12,12 @@ class RecipesList extends Component {
 
     componentDidMount() {
         this.setState({ isLoading: true });
-
+        /*        const {url} = this.useRouteMatch();
+               console.log('hello routerMatch', url); */
         fetch("http://localhost:3001/recipes")
             .then(res => res.json())
             .then(res => this.setState({ recipes: res, isLoading: false }));
+
     }
 
     searchHandler = (e) => {
@@ -23,6 +26,8 @@ class RecipesList extends Component {
         });
         console.log(this.state.searchInput);
     }
+
+
 
     render() {
         const filteredResult = this.state.recipes.filter(recipe => {
@@ -34,10 +39,11 @@ class RecipesList extends Component {
                 <RecipeCard
                     key={recipe.id}
                     name={recipe.name}
-                    category={recipe.category}
-                    src={recipe.src}
-                    about={recipe.about}
-                    url={recipe.url}
+                    origin={recipe.origin}
+                    cookTime={recipe.cookTime}
+                    image={recipe.image}
+                    desc={recipe.desc}
+                    url={recipe.id}
                 />
             );
         });

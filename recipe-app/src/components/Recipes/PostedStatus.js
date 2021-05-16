@@ -1,0 +1,19 @@
+import React from 'react';
+
+const closeHandler = () => {
+    window.location.reload();
+}
+
+const PostedStatus = ({name}) => {
+    return (
+        <div className="overlay">
+            <div className="postedUpdate">
+                <button onClick={closeHandler}>X</button>
+                <p> Your recipe {name} posted successfully</p>
+                {/* <button onClick={closeHandler}>Add New Recipe</button> */}
+            </div>
+        </div>
+    );
+};
+
+export default PostedStatus;

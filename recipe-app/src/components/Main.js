@@ -1,25 +1,36 @@
-import React, { Component } from 'react';
+
 import { Switch, Route } from "react-router-dom";
 
 import Home from './Pages/Home';
 import Recipes from './Pages/Recipes';
 import About from './Pages/About';
-import NewRecipe from './Pages/NewRecipe';
+import RecipeForm from './Pages/AddNewRecipe';
 
-class Main extends Component {
+import React from 'react';
+import SingleRecipe from "./Recipes/SingleRecipe";
 
-    render() {
-        return (
-            <div>
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/recipes" component={Recipes} />
-                    <Route path="/add-new-recipe" component={NewRecipe} />
-                    <Route path="/about" component={About} />
-                </Switch>
-            </div>
-        );
-    }
-}
+const Main = () => {
+    return (
+        <div>
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/recipes">
+                    <Recipes />
+                </Route>
+                <Route path="/recipes/:id">
+                    <SingleRecipe />
+                </Route>
+                <Route exact path="/about">
+                    <About />
+                </Route>
+                <Route exact path="/add-new-recipe">
+                    <RecipeForm />
+                </Route>
+            </Switch>
+        </div>
+    );
+};
 
 export default Main;
