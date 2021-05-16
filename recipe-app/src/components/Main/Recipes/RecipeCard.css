@@ -16,15 +16,16 @@
 }
 
 .card {
+  width: 20rem;
+  height: 30rem;
   overflow: hidden;
   margin: 2rem;
 }
 
-.cards {
+.card-body {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .card:hover {
@@ -33,4 +34,23 @@
     0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
     0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
   transition: all ease 200ms;
+}
+
+.card-button {
+  color: #000 !important;
+}
+
+.card-button:hover {
+  color: #000 !important;
+}
+
+.card:hover .card-button {
+  background-color: #ffc107;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

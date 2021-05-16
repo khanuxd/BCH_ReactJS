@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Badge } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 import './RecipeCard.css'
@@ -11,7 +11,7 @@ const RecipeCard = ({ image, name, origin, cookTime, desc, url }) => {
     };
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card>
             <Card.Img variant="top" src={image} alt={name} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
@@ -21,7 +21,7 @@ const RecipeCard = ({ image, name, origin, cookTime, desc, url }) => {
                 </div>
                 <Card.Text>{descLimit(desc, 15)}</Card.Text>
                 <LinkContainer to={`/recipes/${url}`}>
-                    <Button variant="primary">View Full Recipe</Button>
+                    <Button variant="outline-warning" className="card-button">View Full Recipe</Button>
                 </LinkContainer>
             </Card.Body>
         </Card>
