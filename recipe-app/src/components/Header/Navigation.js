@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 // import { NavLink } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-
-// basic-navbar-nav
 
 const Navigation = () => {
     return (
@@ -12,8 +10,8 @@ const Navigation = () => {
             {/* <LinkContainer to="/">
                 <Navbar.Brand>Recipe-App</Navbar.Brand>
             </LinkContainer> */}
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <LinkContainer to="/" exact={true}>
                         <Nav.Link>Home</Nav.Link>
