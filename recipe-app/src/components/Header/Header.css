@@ -9,12 +9,15 @@
   color: #000;
 }
 
+.logo a:hover {
+  color: #000;
+}
+
 .nav-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  /* background-color: #fff; */
 }
 
 nav ul {
