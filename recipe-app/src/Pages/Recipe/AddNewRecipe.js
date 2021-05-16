@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import PostedStatus from '../Recipes/PostedStatus';
+import PostedStatus from '../../components/Main/Recipes/PostedStatus';
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";

@@ -1,12 +1,10 @@
-
+import React from 'react';
 import { Switch, Route } from "react-router-dom";
 
 import Home from '../../Pages/Home/Home';
-import Recipes from '../../Pages/Recipes';
+import Recipes from '../../Pages/Recipe/Recipes'
 import About from '../../Pages/About/About';
 import RecipeForm from '../../Pages/Recipe/AddNewRecipe';
-
-import React from 'react';
 import SingleRecipe from "./Recipes/SingleRecipe";
 
 const Main = () => {
