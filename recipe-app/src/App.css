@@ -2,43 +2,6 @@ body {
   background-color: rgb(239, 239, 239);
 }
 
-.logo {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.logo a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.nav-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
-  background-color: #fff;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav ul li {
-  padding-right: 1rem;
-}
-
-nav ul li:last-child {
-  padding-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
 .hero {
   height: 100vh;
   background: url(./assests/dish.jpg) no-repeat fixed center center/cover;

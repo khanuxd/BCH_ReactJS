@@ -1,13 +1,15 @@
 import React from 'react';
-import Nav from '../Main/Nav';
+import Navigation from './Navigation';
+
+import './Header.css';
 
 const Header = () => {
     return (
-        <header className="nav-top">
+        <header className="nav-top bg-light fixed-top">
             <div className="logo">
                 <a href="/">Recipe</a>
             </div>
-            <Nav />
+            <Navigation />
         </header>
     );
 };
