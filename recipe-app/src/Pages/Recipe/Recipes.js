@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RecipesList from '../Recipes/RecipesList';
+import RecipesList from '../components/Main/Recipes/RecipesList';
 
 
 import axios from "axios";
