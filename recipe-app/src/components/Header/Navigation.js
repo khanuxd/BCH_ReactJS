@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Navigation = () => {
     return (
         <Navbar collapseOnSelect bg="light" expand="lg">
-            {/* <LinkContainer to="/">
+            {/* <LinkContainer to="/" exact={true}>
                 <Navbar.Brand>Recipe-App</Navbar.Brand>
             </LinkContainer> */}
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

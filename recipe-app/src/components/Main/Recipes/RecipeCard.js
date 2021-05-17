@@ -1,6 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import { Card, Button, Badge } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 import './RecipeCard.css'

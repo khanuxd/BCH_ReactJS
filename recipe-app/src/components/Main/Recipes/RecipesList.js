@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
 import SearchRecipes from '../SearchRecipes';
-// import {useRouteMatch} from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 class RecipesList extends Component {
     state = {
@@ -11,9 +11,9 @@ class RecipesList extends Component {
     }
 
     componentDidMount() {
+
         this.setState({ isLoading: true });
-        /*        const {url} = this.useRouteMatch();
-               console.log('hello routerMatch', url); */
+
         fetch("http://localhost:3001/recipes")
             .then(res => res.json())
             .then(res => this.setState({ recipes: res, isLoading: false }));
@@ -24,10 +24,7 @@ class RecipesList extends Component {
         this.setState({
             searchInput: e.target.value
         });
-        console.log(this.state.searchInput);
     }
-
-
 
     render() {
         const filteredResult = this.state.recipes.filter(recipe => {
@@ -53,6 +50,14 @@ class RecipesList extends Component {
                 <div className="search-area">
                     <SearchRecipes searchInput={this.searchHandler} />
                 </div>
+                {filteredResult.length === 0 && (
+                    <div>
+                        <h1>Nothing Found</h1>
+                        <Button variant="outline-warning"><a href="/recipes">View Full Recipe</a></Button>
+                        <br />
+                        <Button variant="outline-warning"><a href="/add-new-recipe">Add new Recipe</a></Button>
+                    </div>
+                )}
                 <div className="cards">
                     {recipeList}
                 </div>

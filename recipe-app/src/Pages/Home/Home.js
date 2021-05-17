@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
+import { Button } from 'react-bootstrap';
 
 const Home = () => {
     const history = useHistory();
@@ -18,9 +19,9 @@ const Home = () => {
         <div className="hero">
             <h1>In a cooking Mood?</h1>
             <div>
-                <button onClick={pathToRecipes}>Check Recipes</button>
+                <Button variant="outline-warning" onClick={pathToRecipes}>Check Recipes</Button>
                 <span>or</span>
-                <button className="sec-btn" onClick={pathToNewRecipe}>Add New Recipes</button>
+                <Button variant="outline-warning" className="sec-btn" onClick={pathToNewRecipe}>Add New Recipes</Button>
             </div>
         </div>
     );

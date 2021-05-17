@@ -9,7 +9,7 @@ import SingleRecipe from "./Recipes/SingleRecipe";
 
 const Main = () => {
     return (
-        <div>
+        <main className="main-section">
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -27,7 +27,7 @@ const Main = () => {
                     <RecipeForm />
                 </Route>
             </Switch>
-        </div>
+        </main>
     );
 };
 

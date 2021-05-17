@@ -27,12 +27,6 @@ const SingleRecipe = () => {
 
     if (recipe) {
 
-        const recipeSteps = (steps) => {
-             steps.map(step => {
-                return <li>{step}</li>
-            })
-        }
-
         recipeData = (
             <>
                 <div className="recipe">
@@ -41,8 +35,31 @@ const SingleRecipe = () => {
                     <p>{recipe.origin}</p>
                     <p>{recipe.cookTime} Min</p>
                     <p>{recipe.desc}</p>
+                    <p>Ingredients</p>
                     <ul>
-                        {recipeSteps(recipe.recipeInstructions)}
+                        {recipe.recipeIngredient.map((recipeIng) => {
+                            return (
+                                <div>
+                                    <li>
+                                        {recipeIng.ingquantity}
+                                        {" "}
+                                        {recipeIng.ingName}
+                                    </li>
+
+                                </div>)
+                        })}
+                    </ul>
+                    <p>Steps</p>
+                    <ul>
+                        {recipe.recipeInstructions.map((recipeInd) => {
+                            return (
+                                <div>
+                                    <li>
+                                        {recipeInd.recipeStep}
+                                    </li>
+
+                                </div>)
+                        })}
                     </ul>
                 </div>
                 <button onClick={() => history.goBack()}>Back to All Recipe</button>
