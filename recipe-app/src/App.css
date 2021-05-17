@@ -2,54 +2,23 @@ body {
   background-color: rgb(239, 239, 239);
 }
 
+/* BUTTON */
 
-
-/* button {
-  padding: 0.8rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.2rem;
-  margin-left: 10px;
-  background-color: #ff6f00;
-  color: #fff;
-  cursor: pointer;
-} */
-
-/* button:hover {
-  box-shadow: 0px 3px 8px rgba(255, 111, 0, 0.53);
-} */
-
-.sec-btn {
-  padding: 0.8rem;
-  border-radius: 5px;
-  border: 1px solid #ff6f00;
-  font-size: 1.2rem;
-  margin-left: 10px;
-  background-color: #fff;
-  color: #ff6f00;
+.btn-warning {
+  color: #fff !important;
+  background-color: #ff6f00 !important;
+  border-color: #ff6f00 !important;
 }
 
-.searchRecipes input {
-  width: 300px;
-  height: 50px;
-  padding: 1rem;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
+.btn-outline-warning {
+  border-color: #ff6f00 !important;
+  color: #ff6f00 !important;
 }
 
-.search-area {
-  padding: 5rem;
-  display: flex;
-  justify-content: center;
-  background-color: #c7c7c7;
+.btn-outline-warning:hover {
+  background-color: #ff6f00 !important;
+  color: #fff !important;
 }
-
-.home h1 {
-  padding: 3rem 0;
-  text-align: center;
-}
-
 
 .about-us {
   padding: 2rem;

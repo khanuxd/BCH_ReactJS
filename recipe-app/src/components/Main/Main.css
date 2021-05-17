@@ -1,3 +1,10 @@
 .main-section {
     margin-top: 104px;
 }
+
+.search-area {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #c7c7c7;
+  }

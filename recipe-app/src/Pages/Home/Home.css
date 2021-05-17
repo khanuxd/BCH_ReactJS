@@ -1,7 +1,3 @@
-.hero .btn-warning {
-  color: #fff;
-}
-
 .hero {
   height: 100vh;
   background: url(../../assests/dish.jpg) no-repeat fixed center center/cover;

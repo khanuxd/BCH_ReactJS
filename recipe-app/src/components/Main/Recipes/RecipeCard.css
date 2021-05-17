@@ -4,8 +4,8 @@
 }
 
 .recipe-origin {
-  background-color: rgb(255, 233, 191);
-  color: rgb(65, 65, 65);
+  background-color: #ffecdd;
+  color: #df6000;
   padding: 0.3rem 0.7rem;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -41,11 +41,12 @@
 }
 
 .card-button:hover {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .card:hover .card-button {
-  background-color: #ffc107;
+  background-color: #ff6f00;
+  color: #fff !important;
 }
 
 .cards {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RecipeCard from './RecipeCard';
-import SearchRecipes from '../SearchRecipes';
+import SearchRecipes from '../Search/SearchRecipes';
 import { Button } from 'react-bootstrap';
 
 class RecipesList extends Component {
@@ -46,7 +46,7 @@ class RecipesList extends Component {
         });
 
         return (
-            <div>
+            <>
                 <div className="search-area">
                     <SearchRecipes searchInput={this.searchHandler} />
                 </div>
@@ -61,7 +61,7 @@ class RecipesList extends Component {
                 <div className="cards">
                     {recipeList}
                 </div>
-            </div>
+            </>
         );
     }
 }

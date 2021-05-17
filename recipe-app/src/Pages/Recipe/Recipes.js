@@ -28,9 +28,7 @@ const Recipes = () => {
     return (
         <>
             {loading ? <RecipesList recipes={recipes} /> : (
-                <Spinner animation="border" role="status">
-                    <span className="sr-only">Loading...</span>
-                </Spinner>
+                <Spinner animation="border" />
             )}
         </>
     );
