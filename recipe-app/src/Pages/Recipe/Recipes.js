@@ -9,14 +9,18 @@ const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
-        axios
-            .get("http://localhost:3001/recipes")
-            .then((res) => {
-                setRecipes(res.data);
-            })
-            .catch(error => {
-                console.log('error getting fake data:' + error);
-            })
+
+        const allRecipes = async () => {
+
+            try {
+                const recipeRes = await axios.get("http://localhost:3001/recipes")
+                setRecipes(recipeRes.data);
+            } catch (error) {
+                console.log('error getting data:' + error);
+            }
+        };
+        allRecipes();
+
     }, []);
 
     return (
