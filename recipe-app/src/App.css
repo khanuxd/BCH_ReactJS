@@ -2,27 +2,7 @@ body {
   background-color: rgb(239, 239, 239);
 }
 
-.hero {
-  height: 100vh;
-  background: url(./assests/dish.jpg) no-repeat fixed center center/cover;
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.hero h1 {
-  padding: 2rem 0;
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #ff6f00;
-}
-
-.hero span {
-  /* display: block;
-  text-align: center; */
-  padding: 2rem;
-}
 
 /* button {
   padding: 0.8rem;
@@ -70,9 +50,6 @@ body {
   text-align: center;
 }
 
-/* .hero {
-  margin-top: 700px;
-} */
 
 .about-us {
   padding: 2rem;

@@ -2,6 +2,8 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 
+import './Home.css';
+
 const Home = () => {
     const history = useHistory();
 
@@ -19,7 +21,7 @@ const Home = () => {
         <div className="hero">
             <h1>In a cooking Mood?</h1>
             <div>
-                <Button variant="outline-warning" onClick={pathToRecipes}>Check Recipes</Button>
+                <Button variant="warning" onClick={pathToRecipes}>Check All Recipes</Button>
                 <span>or</span>
                 <Button variant="outline-warning" className="sec-btn" onClick={pathToNewRecipe}>Add New Recipes</Button>
             </div>
