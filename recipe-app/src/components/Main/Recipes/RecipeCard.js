@@ -28,32 +28,3 @@ const RecipeCard = ({ image, name, origin, cookTime, desc, url }) => {
 };
 
 export default RecipeCard;
-
-
-/*
-
-<Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
-
-
-<div className="card">
-            <img src={image} alt={name} />
-            <div className="card-content">
-                <h2>{name}</h2>
-                <p className="origin">{origin}</p>
-                <p className="cookTime">{cookTime}</p>
-                <p className="desc">{descLimit(desc, 20)}</p>
-                <Link to={`/recipes/${url}`}>View Full Recipe</Link>
-            </div>
-        </div>
-
-*/

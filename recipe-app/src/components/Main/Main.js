@@ -7,6 +7,8 @@ import About from '../../Pages/About/About';
 import RecipeForm from '../../Pages/Recipe/AddNewRecipe';
 import SingleRecipe from "./Recipes/SingleRecipe";
 
+import './Main.css';
+
 const Main = () => {
     return (
         <main className="main-section">
