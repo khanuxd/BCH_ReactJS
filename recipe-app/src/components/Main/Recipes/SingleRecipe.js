@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 
+import {Button} from 'react-bootstrap';
+
 import './SingleRecipe.css';
 
 const SingleRecipe = () => {
@@ -63,7 +65,7 @@ const SingleRecipe = () => {
                         })}
                     </ul>
                 </div>
-                <button onClick={() => history.goBack()}>Back to All Recipe</button>
+                <Button variant="warning" onClick={() => history.goBack()}>Back to All Recipe</Button>
             </>
         )
     }

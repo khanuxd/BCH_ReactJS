@@ -8,12 +8,12 @@ const SearchRecipes = ({ searchInput }) => {
         <Form className="d-flex">
             <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search here"
                 className="mr-2"
                 aria-label="Search"
                 onChange={searchInput}
             />
-            <Button type="submit" variant="warning">Search</Button>
+            {/* <Button type="submit" variant="warning">Search</Button> */}
         </Form>
     );
 };
