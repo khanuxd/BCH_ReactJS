@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 
+import './SingleRecipe.css';
+
 const SingleRecipe = () => {
     const [recipe, setRecipe] = useState();
     let { id } = useParams();
@@ -35,7 +37,7 @@ const SingleRecipe = () => {
                     <p>{recipe.origin}</p>
                     <p>{recipe.cookTime} Min</p>
                     <p>{recipe.desc}</p>
-                    <p>Ingredients</p>
+                    <h3>Ingredients</h3>
                     <ul>
                         {recipe.recipeIngredient.map((recipeIng) => {
                             return (
@@ -49,7 +51,7 @@ const SingleRecipe = () => {
                                 </div>)
                         })}
                     </ul>
-                    <p>Steps</p>
+                    <h3>Steps</h3>
                     <ul>
                         {recipe.recipeInstructions.map((recipeInd) => {
                             return (
@@ -57,7 +59,6 @@ const SingleRecipe = () => {
                                     <li>
                                         {recipeInd.recipeStep}
                                     </li>
-
                                 </div>)
                         })}
                     </ul>

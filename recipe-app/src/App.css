@@ -79,10 +79,10 @@ textarea {
   background-color: rgb(242, 242, 242);
 }
 
-.active {
+/* .active {
   font-weight: bold;
   color: #ff6f00;
-}
+} */
 
 .overlay {
   position: fixed;

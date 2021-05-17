@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 
 const Navigation = () => {
@@ -12,9 +12,9 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <LinkContainer to="/" exact={true}>
+                    <IndexLinkContainer to="/">
                         <Nav.Link>Home</Nav.Link>
-                    </LinkContainer>
+                    </IndexLinkContainer>
                     <LinkContainer to="/recipes">
                         <Nav.Link>Recipes</Nav.Link>
                     </LinkContainer>
