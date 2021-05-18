@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../../Pages/Recipe/AddNewRecipe.css';
 
 const closeHandler = () => {
     window.location.reload();
 }
 
-const PostedStatus = ({name}) => {
+const PostedStatus = ({ name }) => {
     return (
         <div className="overlay">
             <div className="postedUpdate">
