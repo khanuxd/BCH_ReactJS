@@ -11,19 +11,6 @@
   background-color: #ff6f001f;
 }
 
-.search-area input {
-  width: 300px;
-  text-align: center;
-  background-color: transparent !important;
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid #ffa865;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-}
-
 .search-area h3 {
   padding: 2rem;
   font-weight: 300 !important;

@@ -7,6 +7,8 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import './AddNewRecipe.css';
+
 const RecipeForm = () => {
     const [data, setData] = useState({
         name: "",
@@ -73,11 +75,13 @@ const RecipeForm = () => {
 
     return (
 
-        <div>
+        <div className="add-new-recipe-area">
+
             {change && <PostedStatus name={data.name} />}
 
-            <Form onSubmit={submitData}>
-                <Form.Group>
+            <h3>Add New Recipe</h3>
+            <Form onSubmit={submitData} className="add-new-recipe">
+                <Form.Group className="form-section">
                     <Form.Label htmlFor="name">Name</Form.Label>
                     <Form.Control id="name" type="text" name="name" onChange={changeData} placeholder="eg: Chicken Biriyani" required />
                 </Form.Group>
@@ -105,7 +109,7 @@ const RecipeForm = () => {
                     <Form.Control id="cookTime" type="number" name="cookTime" onChange={changeData} placeholder="ex: 30" required />
                 </Form.Group>
                 <div>
-                    <p>Recipe Ingredients</p>
+                    <h5>Recipe Ingredients</h5>
                     {ingredients.map((_, i) => {
                         return (
                             <div key={i}>
@@ -135,12 +139,12 @@ const RecipeForm = () => {
                         );
                     })}
 
-                    <Button variant="outline-success" onClick={addMore}>
-                        add more
-        </Button>
+                    <Button variant="outline-warning" onClick={addMore}>
+                        Add more
+                    </Button>
                 </div>
                 <div>
-                    <p>Recipe Instructions</p>
+                    <h5>Recipe Instructions</h5>
                     {step.map((_, i) => {
                         return (
                             <div key={i}>
@@ -158,14 +162,14 @@ const RecipeForm = () => {
                         );
                     })}
 
-                    <Button variant="outline-success" onClick={addMoreStep}>
+                    <Button variant="outline-warning" onClick={addMoreStep}>
                         Add step
-        </Button>
+                    </Button>
                     {console.log(`2nd change ${change}`)}
                 </div>
-                <Button type="submit" variant="success" value="Send data" >
+                <Button type="submit" variant="warning" value="Send data" >
                     Post recipe
-            </Button>
+                </Button>
             </Form>
         </div>
     );

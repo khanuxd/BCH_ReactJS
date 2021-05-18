@@ -13,7 +13,9 @@ const SearchRecipes = ({ searchInput }) => {
                 aria-label="Search"
                 onChange={searchInput}
             />
+
             {/* <Button type="submit" variant="warning">Search</Button> */}
+            
         </Form>
     );
 };
