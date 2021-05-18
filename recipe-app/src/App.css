@@ -20,56 +20,7 @@ body {
   color: #fff !important;
 }
 
-.about-us {
-  padding: 2rem;
-  width: 70%;
-  margin: 0 auto;
-}
 
-.about-us h1 {
-  padding: 2rem 0;
-}
-
-.add-recipe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.add-recipe h1 {
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.add-recipe-form {
-  padding: 3rem 4rem;
-  background-color: #ffbf8e;
-}
-
-label {
-  display: block;
-  padding: 0.5rem 0;
-}
-
-.form-section {
-  padding-bottom: 1rem;
-}
-
-.add-recipe input,
-select,
-textarea {
-  border: none;
-  padding: 1rem;
-  width: 300px;
-  font-size: 1.2rem;
-  color: rgb(116, 116, 116);
-}
-
-.add-recipe button {
-  margin: 1rem 0 0 0;
-  text-align: center;
-  width: 100%;
-}
 
 .footer {
   width: 100%;
@@ -78,8 +29,3 @@ textarea {
   margin: 0 auto;
   background-color: rgb(242, 242, 242);
 }
-
-/* .active {
-  font-weight: bold;
-  color: #ff6f00;
-} */
