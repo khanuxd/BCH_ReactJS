@@ -3,7 +3,8 @@ import RecipeCard from './RecipeCard';
 import SearchRecipes from '../Search/SearchRecipes';
 import { Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-// import SearchRecipes from '../'
+
+import './RecipesList.css';
 
 class RecipesList extends Component {
     state = {
@@ -66,15 +67,16 @@ class RecipesList extends Component {
                 </div>
 
                 {filteredResult.length === 0 && (
-                    <div>
+                    <div className="search-empty">
                         <h1>Nothing Found</h1>
+                        <div className="search-empty-btn">
                         <LinkContainer to="/recipes">
-                            <Button type="reset" onClick={this.searchInputHandler} variant="outline-warning">View All Recipes</Button>
+                            <Button type="reset" onClick={this.searchInputHandler} variant="warning">View All Recipes</Button>
                         </LinkContainer>
                         <LinkContainer to="/add-new-recipe">
                             <Button variant="outline-warning">Add New Recipe</Button>
                         </LinkContainer>
-                        <br />
+                        </div>
                         {/* <Button variant="outline-warning"><a href="/add-new-recipe">Add new Recipe</a></Button> */}
                         {/* <Button variant="outline-warning" onClick={()=><Recipes />}><a href="/add-new-recipe">Add new Recipe</a></Button> */}
                     </div>

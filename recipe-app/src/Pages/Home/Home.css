@@ -17,3 +17,32 @@
 .hero span {
   padding: 2rem;
 }
+
+/* tablet */
+
+@media (max-width: 899px) {
+  .hero {
+    align-items: center;
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+
+  .hero span {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Mobile Support */
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+}

@@ -1,3 +1,13 @@
+a.navbar-brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ff6f00;
+}
+
+a.navbar-brand:hover {
+  color: #ff6f00;
+}
+
 .logo {
   font-size: 3rem;
   font-weight: 700;
