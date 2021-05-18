@@ -19,13 +19,3 @@ body {
   background-color: #ff6f00 !important;
   color: #fff !important;
 }
-
-
-
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 2rem 0;
-  margin: 0 auto;
-  background-color: rgb(242, 242, 242);
-}
