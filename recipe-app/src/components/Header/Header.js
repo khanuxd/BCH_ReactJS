@@ -6,35 +6,13 @@ import './Header.css';
 const Header = () => {
 
     return (
-        <header className="nav-top bg-light fixed-top">
+        <header className=" nav-top bg-light fixed-top">
+            <div className="logo">
+                <a href="/">Recipe-App</a>
+            </div>
             <Navigation />
         </header>
     );
 };
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-/*
-const Header = () => {
-    return (
-        <header className="nav-top bg-light fixed-top">
-            <div className="logo">
-                <a href="/">Recipe</a>
-            </div>
-            <LinkContainer to="/" exact>
-                <Navbar.Brand>Recipe-App</Navbar.Brand>
-            </LinkContainer>
-            <Navigation />
-        </header>
-    );
-};
-*/

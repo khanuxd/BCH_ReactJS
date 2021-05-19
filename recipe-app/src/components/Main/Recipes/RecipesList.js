@@ -29,14 +29,10 @@ class RecipesList extends Component {
         });
     }
 
-    searchInputHandler = (e) => {
-        e.preventDefault();
+    clearHandler = (e) => {
         this.setState({
-            searchInput: "",
+            searchInput: '',
         });
-        console.log(this.state.searchInput.length);
-        // e.target.reset();
-        // this.state.searchInput.length = 0;
     }
 
     render() {
@@ -63,7 +59,7 @@ class RecipesList extends Component {
                 <div className="search-area">
 
                     <h3>Find Your Recipe</h3>
-                    <SearchRecipes searchInput={this.searchHandler} />
+                    <SearchRecipes searchInput={this.searchHandler} searchValue={this.state.searchInput} />
                 </div>
 
                 {filteredResult.length === 0 && (
@@ -71,7 +67,7 @@ class RecipesList extends Component {
                         <h1>Nothing Found</h1>
                         <div className="search-empty-btn">
                             <LinkContainer to="/recipes">
-                                <Button type="reset" onClick={this.searchInputHandler} variant="warning">View All Recipes</Button>
+                                <Button type="reset" onClick={this.clearHandler} variant="warning">View All Recipes</Button>
                             </LinkContainer>
                             <LinkContainer to="/add-new-recipe">
                                 <Button variant="outline-warning">Add New Recipe</Button>

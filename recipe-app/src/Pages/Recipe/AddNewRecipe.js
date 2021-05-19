@@ -50,8 +50,6 @@ const RecipeForm = () => {
         setData({ ...data, recipeInstructions: step });
     };
 
-    console.log(`1st change ${change}`);
-
     const addMore = (e, i) => {
         e.preventDefault();
         const newRecipeIngredient = { id: ingredients.length + 1, ingName: "", ingquantity: "" };
@@ -165,7 +163,6 @@ const RecipeForm = () => {
                     <Button variant="outline-warning" onClick={addMoreStep}>
                         Add step
                     </Button>
-                    {console.log(`2nd change ${change}`)}
                 </div>
                 <Button type="submit" variant="warning" value="Send data" >
                     Post recipe

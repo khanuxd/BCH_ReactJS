@@ -6,12 +6,9 @@ import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 const Navigation = () => {
     return (
         <Navbar collapseOnSelect bg="light" expand="lg">
-            <IndexLinkContainer to="/" exact>
-                <Navbar.Brand>Recipe-App</Navbar.Brand>
-            </IndexLinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
+                <Nav className="ml-auto">
                     <IndexLinkContainer to="/">
                         <Nav.Link>Home</Nav.Link>
                     </IndexLinkContainer>

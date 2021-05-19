@@ -1,9 +1,9 @@
 import React from 'react';
-import { Form, FormControl, Button } from 'react-bootstrap';
+import { Form, FormControl } from 'react-bootstrap';
 
 import '../Main.css';
 
-const SearchRecipes = ({ searchInput }) => {
+const SearchRecipes = ({ searchInput, searchValue }) => {
     return (
         <Form className="d-flex">
             <FormControl
@@ -12,10 +12,9 @@ const SearchRecipes = ({ searchInput }) => {
                 className="mr-2"
                 aria-label="Search"
                 onChange={searchInput}
+                value={searchValue}
             />
 
-            {/* <Button type="submit" variant="warning">Search</Button> */}
-            
         </Form>
     );
 };

@@ -27,7 +27,7 @@ const Recipes = () => {
 
     return (
         <>
-            {loading ? <RecipesList recipes={recipes} /> : (
+            {loading ? <RecipesList key={recipes.id} recipes={recipes} /> : (
                 <Spinner animation="border" />
             )}
         </>
