@@ -10,6 +10,6 @@ a.navbar-brand:hover {
 
 .navbar-nav {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }

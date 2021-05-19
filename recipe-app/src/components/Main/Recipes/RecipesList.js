@@ -70,15 +70,13 @@ class RecipesList extends Component {
                     <div className="search-empty">
                         <h1>Nothing Found</h1>
                         <div className="search-empty-btn">
-                        <LinkContainer to="/recipes">
-                            <Button type="reset" onClick={this.searchInputHandler} variant="warning">View All Recipes</Button>
-                        </LinkContainer>
-                        <LinkContainer to="/add-new-recipe">
-                            <Button variant="outline-warning">Add New Recipe</Button>
-                        </LinkContainer>
+                            <LinkContainer to="/recipes">
+                                <Button type="reset" onClick={this.searchInputHandler} variant="warning">View All Recipes</Button>
+                            </LinkContainer>
+                            <LinkContainer to="/add-new-recipe">
+                                <Button variant="outline-warning">Add New Recipe</Button>
+                            </LinkContainer>
                         </div>
-                        {/* <Button variant="outline-warning"><a href="/add-new-recipe">Add new Recipe</a></Button> */}
-                        {/* <Button variant="outline-warning" onClick={()=><Recipes />}><a href="/add-new-recipe">Add new Recipe</a></Button> */}
                     </div>
                 )}
                 <div className="cards">

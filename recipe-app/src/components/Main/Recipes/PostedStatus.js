@@ -1,4 +1,7 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+
 import '../../../Pages/Recipe/AddNewRecipe.css';
 
 const closeHandler = () => {
@@ -11,7 +14,6 @@ const PostedStatus = ({ name }) => {
             <div className="postedUpdate">
                 <button onClick={closeHandler}>X</button>
                 <p> Your recipe {name} posted successfully</p>
-                {/* <button onClick={closeHandler}>Add New Recipe</button> */}
             </div>
         </div>
     );
