@@ -12,9 +12,9 @@ const Header = () => {
             {/* <div className="logo">
                 <a href="/">Recipe</a>
             </div> */}
-            <IndexLinkContainer to="/" exact>
+            {/* <IndexLinkContainer to="/" exact>
                 <Navbar.Brand>Recipe-App</Navbar.Brand>
-            </IndexLinkContainer>
+            </IndexLinkContainer> */}
             <Navigation />
         </header>
     );
