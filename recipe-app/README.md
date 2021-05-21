@@ -16,9 +16,12 @@ A school project for the showcase of cooking recipes where the ultimate goal is 
 1. Fork the Repo into your Git
 2. Clone it to you local Machine
 3. open terminal and run the following command to Install "Node Module" in the project
+
 ### `npm install`
+
 4. check "package.json" and install the dependencies to get everything works.
-5. Run the app in your localhost [http://localhost:3000]
+5. Run the app in your localhost [http://localhost:3000](http://localhost:3000)
+
 ### `npm start`
 
 
